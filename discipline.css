@@ -242,6 +242,17 @@ body {
   font-size: 0.9rem;
 }
 
+.updated-stamp {
+  margin: 0.85rem 0 0;
+  padding: 0.62rem 0.75rem;
+  border: 1px dashed #9fc0e2;
+  border-radius: 10px;
+  background: #f3f9ff;
+  color: #2c5a87;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
 .timeline {
   display: grid;
   gap: 0.55rem;
