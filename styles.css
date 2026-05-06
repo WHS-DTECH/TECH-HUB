@@ -398,6 +398,16 @@ body {
   flex-wrap: wrap;
 }
 
+.hub-updated-stamp {
+  margin: 0;
+  padding: 0.4rem 0.65rem;
+  border: 1px dashed #a9c5e4;
+  border-radius: 10px;
+  background: #f4f9ff;
+  color: #2a5885;
+  font-weight: 700;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(20px);
