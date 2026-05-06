@@ -4,5 +4,5 @@ services:
     runtime: static
     repo: https://github.com/WHS-DTECH/TECH-HUB
     branch: main
-    buildCommand: ""
+    buildCommand: echo "No build step required"
     staticPublishPath: .

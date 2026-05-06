@@ -68,6 +68,7 @@ body {
 .topnav {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .topnav a {
@@ -75,6 +76,55 @@ body {
   color: var(--ink);
   font-weight: 700;
   font-size: 0.92rem;
+}
+
+.topnav-dropdown {
+  position: relative;
+}
+
+.topnav-dropdown summary {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+
+.topnav-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.topnav-dropdown summary::after {
+  content: " \25BE";
+  font-size: 0.8rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.45rem);
+  min-width: 220px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: var(--shadow);
+  padding: 0.5rem;
+  display: grid;
+  gap: 0.2rem;
+  z-index: 30;
+}
+
+.topnav-dropdown:not([open]) .dropdown-menu {
+  display: none;
+}
+
+.dropdown-menu a {
+  padding: 0.42rem 0.5rem;
+  border-radius: 8px;
+}
+
+.dropdown-menu a:hover {
+  background: #ebf4ff;
 }
 
 .hero {
@@ -236,5 +286,11 @@ body {
   .topnav {
     flex-wrap: wrap;
     gap: 0.7rem;
+  }
+
+  .dropdown-menu {
+    position: static;
+    min-width: 100%;
+    margin-top: 0.35rem;
   }
 }
