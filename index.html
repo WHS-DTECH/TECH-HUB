@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Westland High School | Technology Learning Area</title>
+  <meta
+    name="description"
+    content="Technology Learning Area at Westland High School - one home for Textiles, Food and Hospitality, Woodwork and Furniture, and Digital Technologies."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-glow" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#home" aria-label="Westland High School Technology Hub home">
+        <span class="brand-kicker">WESTLAND HIGH SCHOOL</span>
+        <strong class="brand-title">Technology Hub</strong>
+      </a>
+      <nav class="topnav" aria-label="Primary">
+        <a href="#disciplines">Disciplines</a>
+        <a href="#weekly">This Week</a>
+        <a href="#resources">Resources</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container reveal">
+      <div class="hero-copy">
+        <p class="kicker">TECHNOLOGY LEARNING AREA</p>
+        <h1>One home for every technology class your students are building.</h1>
+        <p>
+          A clear view of what is happening in Textiles, Food and Hospitality,
+          Woodwork and Furniture, and Digital Technologies this week.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#weekly">See This Week</a>
+          <a class="btn btn-ghost" href="#disciplines">Browse Disciplines</a>
+        </div>
+      </div>
+      <aside class="hero-stats" aria-label="Hub highlights">
+        <article class="stat-card">
+          <p>Disciplines</p>
+          <strong>4</strong>
+        </article>
+        <article class="stat-card">
+          <p>Active classes this term</p>
+          <strong>12</strong>
+        </article>
+        <article class="stat-card">
+          <p>Weekly focus updates</p>
+          <strong>Every Monday</strong>
+        </article>
+      </aside>
+    </section>
+
+    <section id="disciplines" class="container section reveal">
+      <div class="section-heading">
+        <p class="kicker">SUBJECT DISCIPLINES</p>
+        <h2>Current learning spaces</h2>
+      </div>
+      <div class="discipline-grid">
+        <article class="discipline-card" data-discipline="textiles">
+          <header>
+            <h3>Textiles</h3>
+            <span>Materials and design</span>
+          </header>
+          <p>
+            Garment construction, upcycling, pattern design, and creative textile practice.
+          </p>
+          <a class="inline-link" href="textiles.html">Open discipline page</a>
+          <button class="inline-link" type="button" data-focus="textiles">
+            View this week's update
+          </button>
+        </article>
+
+        <article class="discipline-card" data-discipline="food-hospitality">
+          <header>
+            <h3>Food and Hospitality</h3>
+            <span>Cooking and service</span>
+          </header>
+          <p>
+            Nutrition, practical cookery, hospitality routines, and food safety in action.
+          </p>
+          <a class="inline-link" href="food-hospitality.html">Open discipline page</a>
+          <button class="inline-link" type="button" data-focus="food-hospitality">
+            View this week's update
+          </button>
+        </article>
+
+        <article class="discipline-card" data-discipline="woodwork-furniture">
+          <header>
+            <h3>Woodwork and Furniture</h3>
+            <span>Making and craftsmanship</span>
+          </header>
+          <p>
+            Joinery, safe workshop practice, design process, and furniture construction.
+          </p>
+          <a class="inline-link" href="woodwork-furniture.html">Open discipline page</a>
+          <button class="inline-link" type="button" data-focus="woodwork-furniture">
+            View this week's update
+          </button>
+        </article>
+
+        <article class="discipline-card" data-discipline="digital-technologies">
+          <header>
+            <h3>Digital Technologies</h3>
+            <span>Code and creative media</span>
+          </header>
+          <p>
+            Programming, digital systems, media production, and purposeful problem solving.
+          </p>
+          <a class="inline-link" href="digital-technologies.html">Open discipline page</a>
+          <button class="inline-link" type="button" data-focus="digital-technologies">
+            View this week's update
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section id="weekly" class="container section weekly reveal">
+      <div class="section-heading">
+        <p class="kicker">WHAT IS HAPPENING THIS WEEK</p>
+        <h2>Live weekly learning snapshot</h2>
+      </div>
+
+      <div class="weekly-panel" role="region" aria-label="Weekly discipline updates">
+        <div class="tablist" role="tablist" aria-label="Select discipline"></div>
+        <div class="weekly-content">
+          <article class="weekly-main">
+            <h3 id="weekly-title"></h3>
+            <p id="weekly-summary"></p>
+            <ul id="weekly-list"></ul>
+          </article>
+          <aside class="weekly-meta">
+            <div>
+              <p class="meta-label">Teacher focus</p>
+              <p id="weekly-focus" class="meta-value"></p>
+            </div>
+            <div>
+              <p class="meta-label">Assessment checkpoint</p>
+              <p id="weekly-assessment" class="meta-value"></p>
+            </div>
+            <div>
+              <p class="meta-label">Upcoming event</p>
+              <p id="weekly-event" class="meta-value"></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="container section resources reveal">
+      <div class="section-heading">
+        <p class="kicker">QUICK ACCESS</p>
+        <h2>Learning area resources</h2>
+      </div>
+      <div class="resource-grid">
+        <a href="textiles.html" class="resource-card">
+          <strong>Textiles Space</strong>
+          <span>Weekly update, current learning, and studio focus</span>
+        </a>
+        <a href="food-hospitality.html" class="resource-card">
+          <strong>Food and Hospitality Space</strong>
+          <span>Kitchen programme, routines, and upcoming practicals</span>
+        </a>
+        <a href="woodwork-furniture.html" class="resource-card">
+          <strong>Woodwork and Furniture Space</strong>
+          <span>Workshop goals, build cycle, and project snapshots</span>
+        </a>
+        <a href="digital-technologies.html" class="resource-card">
+          <strong>Digital Technologies Space</strong>
+          <span>Coding focus, sprint work, and classroom notices</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Westland High School | Technology Learning Area</p>
+      <p>Built for learners, staff, and whanau.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
